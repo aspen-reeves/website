@@ -38,170 +38,199 @@
 </head>
 
 <body>
-    <div class="window" style="margin: auto; width: 500px; ">
-        <div class="title-bar">
+    <div class="parent" style="text-align: center;">
+        <div class="child" style="text-align: left;">
+            <div class="window" style="margin: auto; width: 500px; ">
+                <div class="title-bar">
 
-            <div class="title-bar-text">
-                <img src="images/tux.png" style="height: 16px;" />
-                Welcome
+                    <div class="title-bar-text">
+                        <img src="images/tux.png" style="height: 16px;" />
+                        Welcome
+                    </div>
+
+
+
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <a href="https://archlinux.org/">
+                            <button aria-label="Close"></button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="window-body">
+
+                    <p>Hi my name is Aspen</p>
+                    <fieldset>
+                        <legend>About Me</legend>
+
+                        <div class="field-row">
+                            <input checked type="checkbox">
+                            <label>I am a computer science student at the University of Texas at Dallas</label>
+                        </div>
+                        <div class="field-row">
+                            <input checked type="checkbox">
+                            <label>I currently know some C++, Go, and Java</label>
+                        </div>
+                        <div class="field-row">
+                            <input checked type="checkbox">
+                            <label>I like Linux</label>
+                        </div>
+                        <div class="field-row">
+                            <input checked type="checkbox">
+                            <label>I dabble in photography</label>
+                        </div>
+                        <div class="field-row">
+                            <input checked type="checkbox">
+                            <label>I am a great artist, graphic design is my passion</label>
+                        </div>
+                    </fieldset>
+                    <p style="text-align: center; ">
+                        <a href="https://github.com/aspen-reeves" target="_blank"><button>Github</button></a>
+                        <a href="https://www.linkedin.com/in/aspen-reeves-6aa597187/"
+                            target="_blank"><button>LinkedIn</button></a>
+                        <a href="https://photos.aspenr.dev" target="_blank"><button>Photo Gallery</button></a>
+                        <a href="https://modem.network/@aspenfox" target="_blank"><button>Mastodon</button></a>
+                    </p>
+
+
+                </div>
+                <div class="status-bar">
+
+                    <p class="status-bar-field" style="text-align: center;">Deleting System32:</p>
+                    <p class="status-bar-field" style="text-align: center;"><progress></progress></p>
+                    <p class="status-bar-field" style="text-align: center;">Please Install Linux Once Complete</p>
+
+
+                </div>
+
+
             </div>
+        </div>
+        <br>
+        <br>
+        <div class="child">
+            <div class="window" style="margin: auto; width: 600px;">
+                <div class="title-bar">
+
+                    <div class="title-bar-text">
+                        <img src="images/tux.png" style="height: 16px;" />
+                        Other Stuff
+                    </div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <a href="https://archlinux.org/">
+                            <button aria-label="Close"></button>
+                        </a>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <!--make scroll window with links to other pages-->
+                    <div class="scroll">
+                        <ul class="tree-view">
+                            <li>
+                                <details open>
+                                    <summary>Friend's websites</summary>
+                                    <div class="parent">
+                                        <div class="child">
+                                            <a href="https://jaymes.xyz">
+                                                <img src="thumbnails/Solitaire.png" style="height: 50px;" />
+                                                <figcaption>Jaymes</figcaption>
+                                            </a>
+                                        </div>
+                                        <div class="child">
+                                            <a href="https://kotahu.com">
+                                                <img src="thumbnails/Legacy Floppy Disk.png" style="height: 50px;" />
+                                                <figcaption>kotahu</figcaption>
+                                            </a>
+                                        </div>
+
+
+                                    </div>
+                                </details>
+                            </li>
+                            <li>
+                                <details open>
+                                    <summary>cool links</summary>
+                                    <div class="parent">
+                                        <div class="child">
+                                            <a href="https://github.com/pluja/awesome-privacy">
+                                                <img src="thumbnails/Disconnect Network Drive.png"
+                                                    style="height: 50px;" />
+                                                <figcaption>awesome-privacy</figcaption>
+                                            </a>
+                                        </div>
+                                        <div class="child">
+                                            <a href="https://modem.network/home">
+                                                <img src="thumbnails/MSN.png" style="height: 50px;" />
+                                                <figcaption>mastodon</figcaption>
+                                            </a>
+                                        </div>
+                                        <div class="child">
+                                            <a href="https://github.com/awesome-selfhosted/awesome-selfhosted">
+                                                <img src="thumbnails/Internet Connection Wizard.png"
+                                                    style="height: 50px;" />
+                                                <figcaption>awesome-selfhosted</figcaption>
+                                            </a>
+                                        </div>
+                                        <div class="child">
+                                            <a href="photography/photo.html">
+                                                <img src="thumbnails/Appearance.png" style="height: 50px;" />
+                                                <figcaption>my old photo site</figcaption>
+                                            </a>
+                                </details>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="status-bar">
+
+                    <p class="status-bar-field" style="text-align: center;">yes</p>
 
 
 
-            <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <a href="https://archlinux.org/">
-                    <button aria-label="Close"></button>
-                </a>
+                </div>
+
             </div>
         </div>
+        <div class="child">
+            <div class="window" style="margin-left: 30%; width: 300px; ">
+                <div class="title-bar">
 
-        <div class="window-body">
+                    <div class="title-bar-text">
+                        <img src="images/tux.png" style="height: 16px;" />
+                        Visitors
+                    </div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <a href="https://archlinux.org/">
+                            <button aria-label="Close"></button>
+                        </a>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <p style="text-align: center; ">
+                        (you might want to disable adblocker)
+                    </p>
+                    <p style="text-align: center; ">
+                        <a href="https://www.revolvermaps.com/livestats/5f8pbr9i0u5/"><img
+                                src="//rf.revolvermaps.com/h/m/a/0/ff0000/128/30/5f8pbr9i0u5.png" width="256"
+                                height="128" alt="Map"></a>
+                    </p>
 
-            <p>Hi my name is Aspen</p>
-            <fieldset>
-                <legend>About Me</legend>
-
-                <div class="field-row">
-                    <input checked type="checkbox">
-                    <label>I am a computer science student at the University of Texas at Dallas</label>
                 </div>
-                <div class="field-row">
-                    <input checked type="checkbox">
-                    <label>I currently know some C++, Go, and Java</label>
-                </div>
-                <div class="field-row">
-                    <input checked type="checkbox">
-                    <label>I like Linux</label>
-                </div>
-                <div class="field-row">
-                    <input checked type="checkbox">
-                    <label>I dabble in photography</label>
-                </div>
-                <div class="field-row">
-                    <input checked type="checkbox">
-                    <label>I am a great artist, graphic design is my passion</label>
-                </div>
-            </fieldset>
-            <p style="text-align: center; ">
-                <a href="https://github.com/aspen-reeves" target="_blank"><button>Github</button></a>
-                <a href="https://www.linkedin.com/in/aspen-reeves-6aa597187/"
-                    target="_blank"><button>LinkedIn</button></a>
-                <a href="https://photos.aspenr.dev" target="_blank"><button>Photo Gallery</button></a>
-                <a href="https://modem.network/@aspenfox" target="_blank"><button>Mastodon</button></a>
-            </p>
-
-
+            </div>
         </div>
-        <div class="status-bar">
-
-            <p class="status-bar-field" style="text-align: center;">Deleting System32:</p>
-            <p class="status-bar-field" style="text-align: center;"><progress></progress></p>
-            <p class="status-bar-field" style="text-align: center;">Please Install Linux Once Complete</p>
-
-
-        </div>
+        <br>
+        <br>
+        <!--make this div in the bottom right-->
 
 
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="window" style="margin: auto; width: 600px; height: 400px;">
-        <div class="title-bar">
-
-            <div class="title-bar-text">
-                <img src="images/tux.png" style="height: 16px;" />
-                Other Stuff
-            </div>
-        </div>
-        <div class="window-body">
-            <!--make scroll window with links to other pages-->
-            <div class="scroll">
-                <ul class="tree-view">
-                    <li>
-                        <details open>
-                            <summary>Friend's websites</summary>
-                            <div class="parent">
-                                <div class="child">
-                                    <a href="https://jaymes.xyz">
-                                        <img src="thumbnails/Solitaire.png" style="height: 50px;" />
-                                        <figcaption>Jaymes</figcaption>
-                                    </a>
-                                </div>
-                                <div class="child">
-                                    <a href="https://kotahu.com">
-                                        <img src="thumbnails/Legacy Floppy Disk.png" style="height: 50px;" />
-                                        <figcaption>kotahu</figcaption>
-                                    </a>
-                                </div>
-
-
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details open>
-                            <summary>cool links</summary>
-                            <div class="parent">
-                                <div class="child">
-                                    <a href="https://github.com/pluja/awesome-privacy">
-                                        <img src="thumbnails/Disconnect Network Drive.png" style="height: 50px;" />
-                                        <figcaption>awesome-privacy</figcaption>
-                                    </a>
-                                </div>
-                                <div class="child">
-                                    <a href="https://modem.network/home">
-                                        <img src="thumbnails/MSN.png" style="height: 50px;" />
-                                        <figcaption>mastodon</figcaption>
-                                    </a>
-                                </div>
-                                <div class="child">
-                                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted">
-                                        <img src="thumbnails/Internet Connection Wizard.png" style="height: 50px;" />
-                                        <figcaption>awesome-selfhosted</figcaption>
-                                    </a>
-                                </div>
-                                <div class="child">
-                                    <a href="photography/photo.html">
-                                        <img src="thumbnails/Appearance.png" style="height: 50px;" />
-                                        <figcaption>my old photo site</figcaption>
-                                    </a>
-                        </details>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <!--make this div in the bottom right-->
-    <div class="window" style="margin-left: 30%; width: 300px; ">
-        <div class="title-bar">
-
-            <div class="title-bar-text">
-                <img src="images/tux.png" style="height: 16px;" />
-                Visitors
-            </div>
-        </div>
-        <div class="window-body">
-            <p style="text-align: center; ">
-                (you might want to disable adblocker)
-            </p>
-            <p style="text-align: center; ">
-                <a href="https://www.revolvermaps.com/livestats/5f8pbr9i0u5/"><img
-                        src="//rf.revolvermaps.com/h/m/a/0/ff0000/128/30/5f8pbr9i0u5.png" width="256" height="128"
-                        alt="Map"></a>
-            </p>
-
-        </div>
-    </div>
-
-
 </body>
 
 </html>

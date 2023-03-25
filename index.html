@@ -13,6 +13,28 @@
             background: url("images/bg.jpg") no-repeat center center fixed;
             background-size: cover;
         }
+
+        div.scroll {
+            height: 150px;
+            overflow-x: auto;
+            overflow-y: auto;
+            text-align: left;
+            padding: 10px;
+            padding-right: 0px;
+        }
+
+        .parent {
+            margin: 0;
+
+            text-align: left;
+        }
+
+        .child {
+            display: inline-block;
+            padding: 10px;
+            vertical-align: middle;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -68,7 +90,7 @@
                 <a href="https://www.linkedin.com/in/aspen-reeves-6aa597187/"
                     target="_blank"><button>LinkedIn</button></a>
                 <a href="/photography/photo.html" target="_blank"><button>Photo Gallery</button></a>
-                <a href="blog/blog.html" target="_blank"><button>Blog</button></a>
+                <a href="https://modem.network/@aspenfox" target="_blank"><button>Mastodon</button></a>
             </p>
 
 
@@ -84,7 +106,104 @@
 
 
     </div>
-    <div class="window" style="margin: auto; width: 300px; ">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="window" style="margin: auto; width: 400px;">
+        <div class="title-bar">
+
+            <div class="title-bar-text">
+                <img src="images/tux.png" style="height: 16px;" />
+                Other Stuff
+            </div>
+        </div>
+        <div class="window-body">
+            <!--make scroll window with links to other pages-->
+            <div class="scroll">
+                <ul class="tree-view">
+                    <li>
+                        <details open>
+                            <summary>Friend's websites</summary>
+                            <div class="parent">
+                                <div class="child">
+                                    <a href="https://jaymes.xyz">
+                                        <img src="images/tux.png" style="height: 50px;" />
+                                        <figcaption>Jaymes</figcaption>
+                                    </a>
+                                </div>
+                                <div class="child">
+                                    <a href="https://jaymes.xyz">
+                                        <img src="images/tux.png" style="height: 50px;" />
+                                        <figcaption>Jaymes</figcaption>
+                                    </a>
+                                </div>
+                                <div class="child">
+                                    <a href="https://jaymes.xyz">
+                                        <img src="images/tux.png" style="height: 50px;" />
+                                        <figcaption>Jaymes</figcaption>
+                                    </a>
+                                </div>
+                                <div class="child">
+                                    <a href="https://jaymes.xyz">
+                                        <img src="images/tux.png" style="height: 50px;" />
+                                        <figcaption>Jaymes</figcaption>
+                                    </a>
+                                </div>
+                                <div class="child">
+                                    <a href="https://jaymes.xyz">
+                                        <img src="images/tux.png" style="height: 50px;" />
+                                        <figcaption>Jaymes</figcaption>
+                                    </a>
+                                </div>
+                                <div class="child">
+                                    <a href="https://jaymes.xyz">
+                                        <img src="images/tux.png" style="height: 50px;" />
+                                        <figcaption>Jaymes</figcaption>
+                                    </a>
+                                </div>
+                                <div class="child">
+                                    <a href="https://jaymes.xyz">
+                                        <img src="images/tux.png" style="height: 50px;" />
+                                        <figcaption>Jaymes</figcaption>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details open>
+                            <summary>cool links</summary>
+                            <div class="parent">
+                                <div class="child">
+                                    <a href="https://github.com/pluja/awesome-privacy">
+                                        <img src="images/tux.png" style="height: 50px;" />
+                                        <figcaption>Privacy stuff</figcaption>
+                                    </a>
+                                </div>
+                                <div class="child">
+                                    <a href="https://modem.network/home">
+                                        <img src="images/tux.png" style="height: 50px;" />
+                                        <figcaption>mastodon</figcaption>
+                                </div>
+                                <div class="child">
+                                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted">
+                                        <img src="images/tux.png" style="height: 50px;" />
+                                        <figcaption>self hosted stuff</figcaption>
+                                </div>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--make this div in the bottom right-->
+    <div class="window" style="margin-left: 30%; width: 300px; ">
         <div class="title-bar">
 
             <div class="title-bar-text">
@@ -104,6 +223,7 @@
 
         </div>
     </div>
+
 
 </body>
 

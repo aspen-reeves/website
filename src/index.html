@@ -1,114 +1,248 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <title>My Website</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .p {
+            max-width: 80ch;
+            margin: 0 auto;
+            padding: 1.5rem;
+            text-align: left;
+
+        }
+
+        .p2 img {
+            display: block;
+            margin: 1.5rem auto;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
 </head>
+
 <body>
-    <h1>hi</h1>
-    <p>this is aspen's site</p>
+    <div class="p">
+        <h1>hi</h1>
+        <p>this is aspen's site</p>
 
-    <h3>About Me</h3>
-    <ul>
-        <li>embedded electronics tinkererer <a href="#1">--></a></li>
-        <li>born to break shit, forced to wipe firmware 30 trillion times</li>
-        <li>amateur amateur ism band enthusiast(hmu on meshtastic)</li>
-        <li>open source user</li>
-        <li>80s music fan <a href="#2">--></a></li>
-        <li>i dabble in photography <a href="#3">--></a></li>
-        
-    </ul>
-
-    <h4>Contact</h4>
-    <ul>
-        <li><a href="https://github.com/aspen-reeves" target="_blank">Github</a></li>
-        <li><a href="mailto:contact@aspenr.dev">Email</a>
+        <h3>About Me</h3>
         <ul>
-            <li><a href="/aspenr.asc">pgp key</a></li>
+            <li>embedded electronics tinkererer <a href="#1">--></a></li>
+            <li>born to break shit, forced to wipe firmware 30 trillion times</li>
+            <li>amateur amateur ism band enthusiast(hmu on meshtastic)</li>
+            <li>open source user</li>
+            <li>80s music fan <a href="#2">--></a></li>
+            <li>i dabble in photography <a href="#3">--></a></li>
+
         </ul>
-        </li>
 
-    </ul>
+        <h4>Contact</h4>
+        <ul>
+            <li><a href="https://github.com/aspen-reeves" target="_blank">Github</a></li>
+            <li><a href="mailto:contact@aspenr.dev">Email</a>
+                <ul>
+                    <li><a href="/aspenr.asc">pgp key</a></li>
+                </ul>
+            </li>
+
+        </ul>
 
 
-    <h3>Visitors</h3>
+        <h3>Visitors</h3>
 
-    <a href="https://mapmyvisitors.com/web/1byuy" title="Visit tracker">
-        <img src="https://mapmyvisitors.com/map.png?d=b8ZB3W0eulaaQFZITMaSkDkLd0ajyqMUD_CoXdmiQ6s&cl=ffffff" alt="Visitor map" />
-    </a>
+        <a href="https://mapmyvisitors.com/web/1byuy" title="Visit tracker">
+            <img src="https://mapmyvisitors.com/map.png?d=b8ZB3W0eulaaQFZITMaSkDkLd0ajyqMUD_CoXdmiQ6s&cl=ffffff"
+                alt="Visitor map" />
+        </a>
 
-    <h3>buddies =)</h3>
-    <div>
-        <a href="https://aspenr.dev"><img src="legacy/images/icon.gif" alt="aspenr.dev" /></a>
-        <a href="https://ally.cat"><img src="legacy/images/allycat.png" alt="ally.cat" /></a>
-        <a href="https://danii.fi"><img src="legacy/images/daniifi8831.gif" alt="danii.fi" /></a>
-        <a href="https://github.com/tmpim"><img src="legacy/images/tmpim.png" alt="github.com/tmpim" /></a>
-        <a href="https://faggotville.com"><img src="legacy/images/april.gif" alt="faggotville.com" /></a>
-        <a href="https://hugeblank.dev"><img src="legacy/images/hugeblank.gif" alt="hugeblank.dev"/>  </a>
-    </div>
-    <h3>etc cool stuff</h3>
-    <div>
-        <a href="https://netbsd.org"><img src="legacy/images/netbsd.gif" alt="netbsd.org" /></a>
-        <a href="https://www.erininthemorning.com/"><img src="legacy/images/transnow2.gif" alt="erininthemorning.com" /></a>
-        <img src="legacy/images/acab.gif" alt="acab" />
-        <a href="https://archlinux.org/"><img src="legacy/images/archlinux.gif" alt="archlinux.org" /></a>
-        <a href="legacy/azumanga/index.html"><img src="legacy/images/azumanga.png" alt="azumanga" /></a>
-        <a href="https://www.slsknet.org/news/"><img src="legacy/images/soulseek.gif" alt="slsknet.org" /></a>
-    </div>
+        <h3>buddies =)</h3>
+        <div>
+            <a href="https://aspenr.dev"><img src="legacy/images/icon.gif" alt="aspenr.dev" /></a>
+            <a href="https://ally.cat"><img src="legacy/images/allycat.png" alt="ally.cat" /></a>
+            <a href="https://danii.fi"><img src="legacy/images/daniifi8831.gif" alt="danii.fi" /></a>
+            <a href="https://github.com/tmpim"><img src="legacy/images/tmpim.png" alt="github.com/tmpim" /></a>
+            <a href="https://faggotville.com"><img src="legacy/images/april.gif" alt="faggotville.com" /></a>
+            <a href="https://hugeblank.dev"><img src="legacy/images/hugeblank.gif" alt="hugeblank.dev" /> </a>
+        </div>
+        <h3>etc cool stuff</h3>
+        <div>
+            <a href="https://netbsd.org"><img src="legacy/images/netbsd.gif" alt="netbsd.org" /></a>
+            <a href="https://www.erininthemorning.com/"><img src="legacy/images/transnow2.gif"
+                    alt="erininthemorning.com" /></a>
+            <img src="legacy/images/acab.gif" alt="acab" />
+            <a href="https://archlinux.org/"><img src="legacy/images/archlinux.gif" alt="archlinux.org" /></a>
+            <a href="legacy/azumanga/index.html"><img src="legacy/images/azumanga.png" alt="azumanga" /></a>
+            <a href="https://www.slsknet.org/news/"><img src="legacy/images/soulseek.gif" alt="slsknet.org" /></a>
+        </div>
 
-    <h2>yap</h2> 
-    <p>im not making seperate pages for everything</p>
-    <div id="1">
-        <h2>my shitty electronics projects</h2>
+        <h2>yap</h2>
+        <p>im not making seperate pages for everything</p>
+        <div id="1">
+            <h2>my shitty electronics projects</h2>
             <h3>im making a phone i guess</h3>
             <p>its just a rpi 4b with a lte module strapped on. with a weird display
                 that im set to replace.
             </p>
-            <img src="images/DSC00282.JPG"/>
-            <p>(and if your wondering where i get such amazing photos, its none less than the incredible sony mavica)</p>
+            <img src="images/DSC00282.JPG" />
+            <p>(and if your wondering where i get such amazing photos, its none less than the incredible sony mavica)
+            </p>
             <br>
-            <p>most of the work is in debugging and the like. and also reading the AT command manual. the lte module itself 
-                was designed to work as a hat for the rpi zero but that just had strange issues that led me to just use a more powerful sbc
+            <p>most of the work is in debugging and the like. and also reading the AT command manual. the lte module
+                itself
+                was designed to work as a hat for the rpi zero but that just had strange issues that led me to just use
+                a more powerful sbc
             </p>
             <p>
-                as of now i finally have a case and working ish software for everything. runs raspberry pi os lite with then i3 on top. new touchscreen as well.
+                as of now i finally have a case and working ish software for everything. runs raspberry pi os lite with
+                then i3 on top. new touchscreen as well.
             </p>
-            <img src="images/DSC00289.JPG"/>
+            <img src="images/DSC00289.JPG" />
             <p>
-                and everything fits in this neat little case originally meant for index cards. its cheap and temporary but you know what they say about temporary solutions.
-                perhaps i 3d print a complete case or make this a component in a broader radio cyberdeck i never finished building. this would look cool in a pelican case methinks.
+                and everything fits in this neat little case originally meant for index cards.
+                its cheap and temporary but you know what they say about temporary solutions.
+                perhaps i 3d print a complete case or make this a component in a broader radio cyberdeck i never
+                finished building.
+                this would look cool in a pelican case methinks.
             </p>
-            <img src="images/DSC00291.JPG"/>
-            <p>heres a better shot of the careful arangement of all the hats or shields whatever you wanna call it. waveshare made basically everything but the pi ofc.
+            <img src="images/DSC00291.JPG" />
+            <p>heres a better shot of the careful arangement of all the hats or shields whatever you wanna call it.
+                waveshare made basically everything but the pi ofc.
                 since the battery(ups hat) came with no cells i salvaged them from a drill battery.
             </p>
-            <img src="images/DSC00293.JPG"/>
+            <img src="images/DSC00293.JPG" />
+            <br>
+            <h3>the pelican case?</h3>
+            <p>
+                so its in a pelican case now. and the software/hardware stack has changed a bit aswell. more batteries
+                to
+                be added still. keyboard is based on the dz60rgb with via and rgb yeeted and replaced with a basic qmk
+                build.
+                even with all this, it draws about 8w(maybe if my battery script is right) at idle with all the radios
+                doing thier
+                thing. not too much i guess but still enough to generate a good amount of heat and burn through the 2
+                18650s on the ups hat.
+            </p>
+            <img src="images/DSC00295.JPG" />
+            <p>
+                lots of empty room in the case below the keyboard. plan is to add standard usb-pd powerbanks, with a
+                trigger board to 9v or 12v, and a buck
+                down to the 8.4v the ups hat expects from the barrel jack. idk if all that will work but ill sure try.
+                anything to not deal with (non usb)ac adapters
+            </p>
+            <img src="images/DSC00299.JPG" />
+            <p>so the original goal with the software, since i didnt want to try miniaturizing, was to allow basically
+                thin clients to connect over wifi or something</p>
+            <img src="images/DSC00297.JPG" />
+            <p>
+                so i did that. i know onboard wifi has ap mode but i wanted to use a dongle i had lying around to leave
+                the onboard for uplink only.
+                i still have no thin clients besides a basic website.
+            </p>
+            <p>
+                so as it stands, the cyberphonedeck thing is now a glorified router/ap with lte failover that can also
+                make and
+                recieve calls/sms i guess.
+                for more fun i even have wireguard connected to my vps always running just cause. and i dont like isps.
+                and maybe some ttl mangling to maybe avoid hotspot detection.
+            </p>
+            <p>
+                im not really sure the direction i want to turn this. i could get a bigger screen and make this a laptop
+                style cyberdeck, or perhaps run
+                a little storage server, and make this the perfect battery-powered (away-from)-home lab. if its not
+                clear i plan nothing ahead and
+                just go with wherever the wind takes me. but a esp32 thin client is probably a bigger priority.
+            </p>
+            <h3>the software ?</h3>
+            <p>
+                not much to talk about as its such a hack job I hardly understand what ive done to get things working.
+                for networking i have networkmanager for
+                wifi uplink, modemmanager for lte uplink, and hostapd with dnsmasq for the AP side.
+            </p>
+            <p>
+                the phone software is centered around a daemon that manages all the modem stuff internally and exposes a
+                http api, as well as a
+                a library of the same functions for if i wanted to make a different shim later on. not that i use that,
+                my tui phone program i have for
+                testing still uses the api. audio only works on the website one however cause it needs the browser or
+                something.
+                oh and all my daemon and client code is written in golang cause its
+                what i know and can maintain i guess.
+            </p>
+            <h3>other stuff</h3>
+            <p>
+                and annoying tangent. maybe im just dumb at modems. but <a
+                    href="https://www.waveshare.com/wiki/SIM7600G-H_4G_HAT_(B)">the documentation</a> for the
+                hat only mentions using the onboard audio jack for phone calls. but turns out you can just send the raw
+                pcm over serial and it works great. only mention
+                of this is a random pdf linked at the bottom of the wiki called
+                <a
+                    href="https://www.waveshare.com/w/upload/8/8e/SIM7100_SIM7500_SIM7600_Series_USB_AUDIO_Application_Note_V1.03.pdf">SIM7600
+                    Series_USB AUDIO_Application Note</a>
+                truly does work like a charm. with my server-client approach to a phone i just forward the pcm over http
+                to my website client.
+                i doubt using linux audio(alsa) would add much latency but why use it if the 'server' never outputs the
+                audio itself. but dont listen to me
+                im no software enjenir.
+            </p>
+            <p>
+                also if for some reason you read all this and thought "why not just use modemmanager?". well i wanted to
+                learn about AT commands and stuff i thought
+                it'd be neat. plus concurrency stuff with handling URC's(Unsolicited Result Code). also i do use
+                modemmanager just only for LTE
+                cause no way im going to deal with tcp over AT commands. also modemmanager doesnt support MMS as far as
+                i can find on the internet.
+            </p>
 
+
+        </div>
+        <div id="2">
+            <h2>music</h2>
+            <p>i do condone music piracy and <a href="https://www.slsknet.org/news/"><img
+                        src="legacy/images/soulseek.gif" alt="slsknet.org" /></a> is my favorite way to do it</p>
+            <p>i like the diy nature of punk and battle jackets of metal but mostly listen to post-punk at the moment.
+                so heres my jacket/vest</p>
+            <img src="images/DSC00283.JPG" /><img src="images/DSC00284.JPG" />
+            <p>color rendering on the camera is bleh but all the embroidery thread used to attach it are fun colors</p>
+            <p>i used to just listen to generic 80s pop but after getting into the more 'alternative' acts i can hardly
+                go back. i also listen to lots of other music from other eras but yapping about smooth jazz or dnb isnt
+                fun</p>
+        </div>
+        <div id="3">
+            <h2>photography</h2>
+            <p>as mentioned before, my current and only camera right now is the wonderful sony mavica. it takes quite
+                nice photos if you dont shoot onto floppy disks and instead use sony's proprietary memory stick</p>
+            <p>here it is taking its selfie</p>
+            <img src="images/DSC00286.JPG" />
+            <p>and here are my dogs</p>
+            <img src="images/DSC00281.JPG" />
+            <p>an unscaled image to show this cameras true prowess</p>
+            <div class="p2">
+                <img src="images/DSC00257.JPG" />
+            </div>
+            <p>assorted pictures from around town, taken on my old film camera</p>
+            <img src="images/1.jpeg" />
+            <img src="images/2.jpeg" />
+            <br>
+            <h2>thank you for visiting my site</h2>
+        </div>
+        <h4>post script</h4>
+        <p>
+            if you would really like to just see my old site that had css then <a href="legacy/index.html">here u
+                go</a>
+        </p>
+        <br>
+        <p>
+            also im not going to use spell check im writting this html by hand in a text editor
+        </p>
     </div>
-    <div id="2">
-        <h2>music</h2>
-        <p>i do condone music piracy and <a href="https://www.slsknet.org/news/"><img src="legacy/images/soulseek.gif" alt="slsknet.org" /></a> is my favorite way to do it</p>
-        <p>i like the diy nature of punk and battle jackets of metal but mostly listen to post-punk at the moment. so heres my jacket/vest</p>
-        <img src="images/DSC00283.JPG"/><img src="images/DSC00284.JPG"/>
-        <p>color rendering on the camera is bleh but all the embroidery thread used to attach it are fun colors</p>
-        <p>i used to just listen to generic 80s pop but after getting into the more 'alternative' acts i can hardly go back. i also listen to lots of other music from other eras but yapping about smooth jazz or dnb isnt fun</p>
-    </div>
-    <div id="3">
-        <h2>photography</h2>
-        <p>as mentioned before, my current and only camera right now is the wonderful sony mavica. it takes quite nice photos if you dont shoot onto floppy disks and instead use sony's proprietary memory stick</p>
-        <p>here it is taking its selfie</p>
-        <img src="images/DSC00286.JPG"/>
-        <p>and here are my dogs</p>
-        <img src="images/DSC00281.JPG"/>
-        <p>an unscaled image to show this cameras true prowess</p>
-        <img src="images/DSC00257.JPG"/>
-        <p>assorted pictures from around town, taken on my old film camera</p>
-        <img src="images/1.jpeg"/>
-        <img src="images/2.jpeg"/>
-    </div>
-    <h4>post script</h4>
-    <p>oh and if you would really like to just see my old site that had css then <a href="legacy/index.html">here u go</a> </p>
 </body>
+
 </html>

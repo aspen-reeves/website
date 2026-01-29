@@ -41,6 +41,7 @@
             <li>open source user</li>
             <li>80s music fan <a href="#2">--></a></li>
             <li>i dabble in photography <a href="#3">--></a></li>
+            <li>anarchist communist <a href="#4">--></a> </li>
 
         </ul>
 
@@ -49,7 +50,8 @@
             <li><a href="https://github.com/aspen-reeves" target="_blank">Github</a></li>
             <li><a href="mailto:contact@aspenr.dev">Email</a>
                 <ul>
-                    <li><a href="/aspenr.asc">pgp key</a></li>
+                    <li><a href="/aspenr.asc">gpg key</a></li>
+                    <li>fingerprint: 921d 6663 00db 3147 8850 eddb 525f b67e f0c7 82d3</li>
                 </ul>
             </li>
 
@@ -65,7 +67,7 @@
 
         <h3>buddies =)</h3>
         <div>
-            <a href="https://aspenr.dev"><img src="legacy/images/icon.gif" alt="aspenr.dev" /></a>
+            
             <a href="https://ally.cat"><img src="legacy/images/allycat.png" alt="ally.cat" /></a>
             <a href="https://danii.fi"><img src="legacy/images/daniifi8831.gif" alt="danii.fi" /></a>
             <a href="https://github.com/tmpim"><img src="legacy/images/tmpim.png" alt="github.com/tmpim" /></a>
@@ -82,6 +84,8 @@
             <a href="legacy/azumanga/index.html"><img src="legacy/images/azumanga.png" alt="azumanga" /></a>
             <a href="https://www.slsknet.org/news/"><img src="legacy/images/soulseek.gif" alt="slsknet.org" /></a>
         </div>
+        <h3>feel free to add mine :3</h3>
+        <a href="https://aspenr.dev"><img src="legacy/images/icon.gif" alt="aspenr.dev" /></a>
 
         <h2>yap</h2>
         <p>im not making seperate pages for everything</p>
@@ -200,6 +204,38 @@
                 cause no way im going to deal with tcp over AT commands. also modemmanager doesnt support MMS as far as
                 i can find on the internet.
             </p>
+            <p>
+                also also the keyboard flashing is never documented properly anywhere i could find on the internet. as this rev 2.1 of the dz60rgb has to be flashed
+                via this wacky mass storage bs. but you cant just copy over the bin you have to use dd like so 
+                <pre>
+                    <code>
+                sudo dd if=.build/dztech_dz60rgb_v2_1_[whatever].bin \
+                of=/run/media/$USER/KBDFANS/FLASH.BIN \
+                bs=512 conv=notrunc oflag=direct,sync status=progress
+                sync
+                    </code>
+                </pre>
+                otherwise everything explodes and you have to reset the keyboard. which you can do by pressing the weird button on the 
+                back close to the spacebar switch, or if you actually read the documentation(for which i am incapable) you can just hold esc 
+                while you plug in the keyboard. otherwise everything in qmk works like a charm. to do the disabling of rgb i mentioned before 
+                you just make a rules.mk that contains <code>RGB_MATRIX_ENABLE = no</code> in your keymap folder, and compile ur keymap like normal:
+                <pre>
+                    <code>
+                qmk compile -kb dztech/dz60rgb/v2_1 -km [whatever]
+                    </code>
+                </pre>
+                assuming ofc you have the keymap and a clean build of qmk. as if you attempt to download directly from the online configurator the builds 
+                will mysteriously fail. so just use <a href="https://config.qmk.fm">the configurator</a> to get the keymap json, and use the fresh 
+                clean qmk to convert it to the keymap.c 
+                <pre>
+                    <code>
+                qmk json2c ~/[random bs name that it downloads].json \
+                > keyboards/dztech/dz60rgb/v2_1/keymaps/[whatever]/keymap.c
+                    </code>
+                </pre>
+                i should mention that this is only for this revision, <a href="documents/bs.pdf">the official docs</a> might be right for the others. but its guidance
+                for this one is just plain wrong, or maybe linux handles things wrong. or i dont know anything
+            </p>
 
 
         </div>
@@ -214,6 +250,7 @@
             <p>i used to just listen to generic 80s pop but after getting into the more 'alternative' acts i can hardly
                 go back. i also listen to lots of other music from other eras but yapping about smooth jazz or dnb isnt
                 fun</p>
+            
         </div>
         <div id="3">
             <h2>photography</h2>
@@ -231,8 +268,25 @@
             <img src="images/1.jpeg" />
             <img src="images/2.jpeg" />
             <br>
-            <h2>thank you for visiting my site</h2>
         </div>
+        <div id="4">
+            <h2>anarchist communism</h2>
+            <p>
+                idk i just think the state is cringe, and only used to enforce the existing intertwined power and capital. but im no writer
+                so if you want you can read some of the following works from one russian geographer "Peter Kropotkin":
+            </p>
+            <ul>
+                <li><a href="documents/petr-kropotkin-the-conquest-of-bread-1926-edition.pdf">The Conquest of Bread</a></li>
+                <li><a href="documents/petr-kropotkin-fields-factories-and-workshops-or-industry-combined-with-agriculture-and-brain-w.pdf">Fields, Factories, and Workshops</a> </li>
+                <li><a href="documents/petr-kropotkin-mutual-aid-a-factor-of-evolution.pdf">Mutual Aid: A Factor of Evolution</a> </li>
+            </ul>
+            <p>
+                ofc there are newer writings from other thinkers that arent from the 1800s but these are still a good place to start. not to mention rather timeless.
+            </p>
+
+        </div>
+        <h2>thank you for visiting my site</h2>
+
         <h4>post script</h4>
         <p>
             if you would really like to just see my old site that had css then <a href="legacy/index.html">here u
